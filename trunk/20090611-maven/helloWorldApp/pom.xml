@@ -16,7 +16,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>org.bordeauxjug.App</mainClass>
+                            <mainClass>org.bordeauxjug.hello.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
