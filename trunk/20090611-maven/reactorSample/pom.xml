@@ -10,6 +10,7 @@
         <module>persistenceLayer</module>
         <module>businessLayer</module>
         <module>unusefullForBusiness</module>
+        <module>webApp</module>
     </modules>
 
     <build>
