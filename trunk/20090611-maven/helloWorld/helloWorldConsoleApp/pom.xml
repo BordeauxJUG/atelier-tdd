@@ -3,17 +3,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.bordeauxjug</groupId>
-    <artifactId>helloWorldApp</artifactId>
+    <artifactId>helloWorldConsoleApp</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>helloWorldApp</name>
-    <url>http://maven.apache.org</url>
+    <name>helloWorldConsoleApp</name>
+    
 
     <scm>
         <connection>scm:svn:http://jugbordeaux.googlecode.com/svn/trunk/20090611-maven/helloWorldApp/</connection>
     </scm>
     
-    <!--reporting>
+    <reporting>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -45,7 +45,7 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
             </plugin>
         </plugins>
-    </reporting-->
+    </reporting>
 
     <build>
         <plugins>
