@@ -6,7 +6,7 @@
     <artifactId>helloWorld</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>helloWorld :: PARENT</name>
+    <name>step6 :: helloWorld :: PARENT</name>
 
     <scm>
         <connection>scm:svn:http://jugbordeaux.googlecode.com/svn/trunk/20090611-maven/helloWorld/</connection>

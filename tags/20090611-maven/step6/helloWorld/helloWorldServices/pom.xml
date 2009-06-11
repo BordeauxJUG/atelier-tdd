@@ -11,5 +11,5 @@
     <groupId>org.bordeauxjug</groupId>
     <artifactId>helloWorldServices</artifactId>
     <packaging>jar</packaging>
-    <name>helloWorldServices</name>
+    <name>step6 :: helloWorldServices</name>
 </project>
