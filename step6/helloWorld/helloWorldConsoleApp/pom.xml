@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>helloWorldConsoleApp</artifactId>
     <packaging>jar</packaging>
-    <name>helloWorldConsoleApp</name>
+    <name>step6 :: helloWorldConsoleApp</name>
     
 
     <dependencies>
