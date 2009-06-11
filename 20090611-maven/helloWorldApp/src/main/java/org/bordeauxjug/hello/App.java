@@ -1,13 +1,15 @@
 package org.bordeauxjug.hello;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
+public class App {
+
+    private static Log commonsLogger = LogFactory.getLog(App.class);
+
+    public static void main(String[] args) {
+//        commonsLogger.debug("Entering main() ...");
+        commonsLogger.info("Hello World!");
+
     }
 }
