@@ -6,7 +6,7 @@
     <artifactId>helloWorldServices</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>helloWorldServices</name>
+    <name>step5 :: helloWorldServices</name>
 
     <dependencies>
 
