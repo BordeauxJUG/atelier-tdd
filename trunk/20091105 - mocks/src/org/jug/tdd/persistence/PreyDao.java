@@ -5,7 +5,7 @@ import java.util.List;
 import org.jug.tdd.model.Coordinates;
 import org.jug.tdd.model.IPrey;
 
-public class ProieDao
+public class PreyDao
 {
 
 	// Create or update, the prey can be dead
