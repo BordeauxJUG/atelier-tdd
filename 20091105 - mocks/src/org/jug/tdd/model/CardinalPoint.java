@@ -3,9 +3,9 @@ package org.jug.tdd.model;
 public enum CardinalPoint {
 
 
-	NORTH(0, 1),
+	NORTH(0, -1),
 
-	SOUTH(0, -1),
+	SOUTH(0, 1),
 
 	EAST(1, 0),
 
