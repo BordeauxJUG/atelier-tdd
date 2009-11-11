@@ -6,9 +6,5 @@ public interface IPrey extends IMovable
 
 	int getEnergyValue();
 
-	String getName();
-
-	Coordinates getCoordinates();
-
 	void gotEaten();
 }
