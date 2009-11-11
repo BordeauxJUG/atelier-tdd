@@ -1,6 +1,6 @@
 package org.jug.tdd.model;
 
-public interface IPrey
+public interface IPrey extends IMovable
 {
 	Kingdom getKingdom();
 
@@ -8,11 +8,7 @@ public interface IPrey
 
 	String getName();
 
-	int getSpeed();
-
 	Coordinates getCoordinates();
-
-	Coordinates move(CardinalPoint direction);
 
 	void gotEaten();
 }
