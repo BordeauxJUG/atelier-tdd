@@ -2,11 +2,8 @@ package org.jug.tdd.model;
 
 
 
-public interface IPredator extends IActor {
+public interface IPredator extends IActor, ISensorable, IFoodModable {
 
 	void eat(IPrey prey);
-	
-	void setFoodMode(IFoodMode foodMode);
-	
 	
 }
