@@ -2,7 +2,6 @@ package org.jug.tdd.model;
 
 public interface IMoveBehaviour {
 
-	int getSpeed();
-
+	boolean canMove(Coordinates currentCoord, CardinalPoint currentDirection);
 	Coordinates move(Coordinates currentCoord, CardinalPoint currentDirection);
 }
