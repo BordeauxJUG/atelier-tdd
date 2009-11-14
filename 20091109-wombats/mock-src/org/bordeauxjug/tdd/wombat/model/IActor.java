@@ -1,4 +1,4 @@
-package org.jug.tdd.model;
+package org.bordeauxjug.tdd.wombat.model;
 
 public interface IActor {
 
