@@ -48,5 +48,13 @@ public class Move {
 			return false;
 		return true;
 	}
+
+	public void setCp(CardinalPoint cp) {
+		this.cp = cp;
+	}
+
+	public void setCoord(Coordinates coord) {
+		this.coord = coord;
+	}
 	
 }
