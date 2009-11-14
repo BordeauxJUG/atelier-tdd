@@ -1,6 +1,6 @@
 package org.jug.tdd.model;
 
-public interface IPrey extends IActor
+public interface IPrey /*extends IActor*/
 {
 	Kingdom getKingdom();
 
