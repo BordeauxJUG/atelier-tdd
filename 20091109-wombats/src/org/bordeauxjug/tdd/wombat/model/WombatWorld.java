@@ -13,12 +13,26 @@ public class WombatWorld extends World
 {
 	/**
 	 * Create a new world with 8x8 cells and with a cell size of 60x60 pixels
+	 * and with populated objects
 	 */
-	public WombatWorld()
-	{
-		super(8, 8, 60);
+	public WombatWorld(){
+		this(8,8,true);
+	}
+	
+	/**
+	 * Create a new world with worldWidth x worldHeight cells and with a cell size of 60x60 pixels
+	 * World population depends on populate flag
+	 * @param worldWidth Number of x cells
+	 * @param worldHeight Number of y cells
+	 * @param populate If true, will populate world with wombats and leaves, otherwise, world will be
+	 * freed
+	 */
+	public WombatWorld(int worldWidth, int worldHeight, boolean populate){
+		super(worldWidth, worldHeight, 60);
 		setBackground("images/cell.jpg");
-		populate();
+		if(populate){
+			populate();
+		}
 	}
 
 	// @Test
@@ -34,7 +48,7 @@ public class WombatWorld extends World
 	public void populate()
 	{
 		Wombat w1 = new Wombat();
-		addObject(w1, 3, 3);
+		addObject(w1, 0, 0);
 
 		Wombat w2 = new Wombat();
 		addObject(w2, 1, 7);
