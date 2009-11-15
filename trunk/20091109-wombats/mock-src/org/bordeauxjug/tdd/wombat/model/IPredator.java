@@ -2,7 +2,7 @@ package org.bordeauxjug.tdd.wombat.model;
 
 
 
-public interface IPredator extends IActor, IFoodModable, IMovable {
+public interface IPredator extends IActorDelegate, IFoodModable, IMovable {
 
 	void eat(IPrey prey);
 	
