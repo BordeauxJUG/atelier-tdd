@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="srcClassDiagram" id="{UMLID=_Rkyx0NIzEd6XQtR1w4tG6A,JavaID=}" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="10" key="323030373036323920776F6D62617473">
-  <children xsi:type="editmodel:ClassEditModel" name="ActorDelegator" location="42,154" size="404,135" timstampe="3" stereotype="" id="{UMLID=_iQFqcNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ActorDelegator}" runTimeClassModel="act(),getActorDelegate(),ActorDelegator(),actorDelegate">
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="srcClassDiagram" id="{UMLID=_Rkyx0NIzEd6XQtR1w4tG6A,JavaID=}" metadata="uml2-1.0" initialized="true" zoom="0.75" scrolledX="991" scrolledY="319" tag="10" key="323030373036323920776F6D62617473">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.0" name="ActorDelegator" location="42,154" size="404,135" timstampe="3" stereotype="" id="{UMLID=_iQFqcNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ActorDelegator}" runTimeClassModel="act(),getActorDelegate(),ActorDelegator(),actorDelegate">
     <children xsi:type="editmodel:CompartmentEditModel" size="96,18">
       <children xsi:type="editmodel:AttributeEditModel" name="actorDelegate" size="96,16" id="{UMLID=_iT8PsNIzEd6XQtR1w4tG6A}"/>
     </children>
@@ -21,13 +21,13 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0" name="Actor" backgroundRGB="255,128,0" location="56,14" size="235,27" fontInfo="Omondo_Font_Default-8-0" timstampe="3" stereotype="" id="{UMLID=_qT5I0NIzEd6XQtR1w4tG6A}" runTimeClassModel="setDelegate(L/lib/greenfoot.greenfoot.platforms.ActorDelegate;),toPixel(I),calcBounds(),setWorld(L/lib/greenfoot.greenfoot.World;),getBoundingRect(),rotation,NO_WORLD,setData(Ljava.lang.Object;),getPaintX(),boundingRect,failIfNotInWorld(),getWorld(),getPaintY(),mySequenceNumber,image,setLastPaintSeqNum(I),getCellCenter(I),getXMin(),getNeighbours(IZLjava.lang.Class;),addToWorld(IIL/lib/greenfoot.greenfoot.World;),getXMax(),getRotatedShape(),getActiveWorld(),transportField,lastPaintSequenceNumber,setTransportField(Ljava.lang.Object;),sizeChanged(),getImage(),getOneIntersectingObject(Ljava.lang.Class;),setLocation(II),getClassImage(),limitValue(II),getYMin(),contains(II),Actor(),data,getOneObjectAtOffset(IILjava.lang.Class;),getIntersectingObjects(Ljava.lang.Class;),&lt;clinit>(),getRotation(),sequenceNumber,getDelegate(),delegate,setImage(Ljava.lang.String;),remoteObjectTracker,getObjectsAtOffset(IILjava.lang.Class;),addedToWorld(L/lib/greenfoot.greenfoot.World;),locationChanged(II),getLastPaintSeqNum(),setRotation(I),getRemoteObjectTracker(),intersects(L/lib/greenfoot.greenfoot.Actor;),setImage(L/lib/greenfoot.greenfoot.GreenfootImage;),getImage(Ljava.lang.Class;),getSequenceNumber(),greenfootImage,getObjectsInRange(ILjava.lang.Class;),getYMax(),getX(),setLocationInPixels(II),act(),toCellFloor(I),getData(),getY(),world,y,ACTOR_NOT_IN_WORLD,x">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.12/@sourceConnections.0" name="Actor" backgroundRGB="255,128,0" location="56,14" size="235,27" fontInfo="Omondo_Font_Default-8-0" timstampe="3" stereotype="" id="{UMLID=_qT5I0NIzEd6XQtR1w4tG6A}" runTimeClassModel="setDelegate(L/lib/greenfoot.greenfoot.platforms.ActorDelegate;),toPixel(I),calcBounds(),setWorld(L/lib/greenfoot.greenfoot.World;),getBoundingRect(),rotation,NO_WORLD,setData(Ljava.lang.Object;),getPaintX(),boundingRect,failIfNotInWorld(),getWorld(),image,mySequenceNumber,getPaintY(),setLastPaintSeqNum(I),getCellCenter(I),getXMin(),addToWorld(IIL/lib/greenfoot.greenfoot.World;),getNeighbours(IZLjava.lang.Class;),getXMax(),getRotatedShape(),getActiveWorld(),lastPaintSequenceNumber,transportField,setTransportField(Ljava.lang.Object;),sizeChanged(),getImage(),getOneIntersectingObject(Ljava.lang.Class;),setLocation(II),getClassImage(),limitValue(II),getYMin(),contains(II),Actor(),data,getOneObjectAtOffset(IILjava.lang.Class;),getIntersectingObjects(Ljava.lang.Class;),&lt;clinit>(),getRotation(),sequenceNumber,getDelegate(),delegate,setImage(Ljava.lang.String;),remoteObjectTracker,getObjectsAtOffset(IILjava.lang.Class;),addedToWorld(L/lib/greenfoot.greenfoot.World;),locationChanged(II),getLastPaintSeqNum(),setRotation(I),intersects(L/lib/greenfoot.greenfoot.Actor;),getRemoteObjectTracker(),setImage(L/lib/greenfoot.greenfoot.GreenfootImage;),getImage(Ljava.lang.Class;),getSequenceNumber(),greenfootImage,getObjectsInRange(ILjava.lang.Class;),getYMax(),act(),setLocationInPixels(II),getX(),toCellFloor(I),getData(),getY(),ACTOR_NOT_IN_WORLD,y,world,x">
     <children xsi:type="editmodel:CompartmentEditModel" size="155,288"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="162,936"/>
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" Minimize="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.0/@sourceConnections.1 //@children.3/@sourceConnections.0 //@children.9/@sourceConnections.0" name="IActorDelegate" location="573,168" size="387,133" timstampe="5" id="{UMLID=_iQZzgNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IActorDelegate}" runTimeClassModel="getName(),act(),getCoordinates(),setGreenfootActor(Lorg.bordeauxjug.tdd.wombat.model.ActorDelegator;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.0/@sourceConnections.1 //@children.3/@sourceConnections.0 //@children.9/@sourceConnections.0 //@children.14/@sourceConnections.0" name="IActorDelegate" location="573,168" size="387,133" timstampe="5" id="{UMLID=_iQZzgNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IActorDelegate}" runTimeClassModel="getName(),act(),getCoordinates(),setGreenfootActor(Lorg.bordeauxjug.tdd.wombat.model.ActorDelegator;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="131,72">
       <children xsi:type="editmodel:MethodEditModel" name="act" size="55,16" id="{UMLID=_3s5xUtIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IActorDelegate#act()}"/>
@@ -38,7 +38,7 @@
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" name="IPredator" location="658,560" size="352,79" timstampe="13" id="{UMLID=_7N7oENIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IPredator}" runTimeClassModel="eat(Lorg.bordeauxjug.tdd.wombat.model.IPrey;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.16/@sourceConnections.0" name="IPredator" location="658,560" size="352,79" timstampe="13" id="{UMLID=_7N7oENIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IPredator}" runTimeClassModel="eat(Lorg.bordeauxjug.tdd.wombat.model.IPrey;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="55,18">
       <children xsi:type="editmodel:MethodEditModel" name="eat" size="55,16" id="{UMLID=_7OGAINIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IPredator#eat(Lorg.bordeauxjug.tdd.wombat.model.IPrey;)}"/>
@@ -54,11 +54,11 @@
     </sourceConnections>
     <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" description="Generalization" autoLocated="true" id="{UMLID=_7OEyAdIzEd6XQtR1w4tG6A}" source="//@children.3" target="//@children.6" targetEnd="//@children.3/@sourceConnections.2/@children.1" sourceEnd="//@children.3/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
       <children xsi:type="editmodel:AssociationEndEditModel" location="336,0" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="14,97"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="14,113"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.1" name="IFoodModable" location="854,308" size="384,79" timstampe="6" id="{UMLID=_7OCVwNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IFoodModable}" runTimeClassModel="setFoodMode(Lorg.bordeauxjug.tdd.wombat.model.IFoodMode;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.1 //@children.17/@sourceConnections.0" name="IFoodModable" location="854,308" size="384,79" timstampe="6" id="{UMLID=_7OCVwNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IFoodModable}" runTimeClassModel="setFoodMode(Lorg.bordeauxjug.tdd.wombat.model.IFoodMode;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="105,18">
       <children xsi:type="editmodel:MethodEditModel" name="setFoodMode" size="105,16" id="{UMLID=_-jICQNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IFoodModable#setFoodMode(Lorg.bordeauxjug.tdd.wombat.model.IFoodMode;)}"/>
@@ -71,7 +71,7 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.4/@sourceConnections.0" name="IFoodMode" location="1400,308" size="364,79" timstampe="2" id="{UMLID=_-jJ3cNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IFoodMode}" runTimeClassModel="canEat(Lorg.bordeauxjug.tdd.wombat.model.IPrey;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.4/@sourceConnections.0 //@children.18/@sourceConnections.0" name="IFoodMode" location="1400,308" size="364,79" timstampe="2" id="{UMLID=_-jJ3cNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IFoodMode}" runTimeClassModel="canEat(Lorg.bordeauxjug.tdd.wombat.model.IPrey;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="73,18">
       <children xsi:type="editmodel:MethodEditModel" name="canEat" size="73,16" id="{UMLID=_-jcyYNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IFoodMode#canEat(Lorg.bordeauxjug.tdd.wombat.model.IPrey;)}"/>
@@ -79,21 +79,21 @@
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.2" name="IMovable" location="980,406" size="351,97" timstampe="5" id="{UMLID=_7OEK8NIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMovable}" runTimeClassModel="setDirection(Lorg.bordeauxjug.tdd.wombat.model.CardinalPoint;),setMoveBehaviour(Lorg.bordeauxjug.tdd.wombat.model.IMoveBehaviour;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.3/@sourceConnections.2 //@children.19/@sourceConnections.0" name="IMovable" location="980,406" size="367,113" timstampe="33" id="{UMLID=_7OEK8NIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMovable}" runTimeClassModel="setMoveBehaviour(),setDirection(Lorg.bordeauxjug.tdd.wombat.model.CardinalPoint;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="130,36">
       <children xsi:type="editmodel:MethodEditModel" name="setDirection" size="97,16" id="{UMLID=_-j1z8NIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMovable#setDirection(Lorg.bordeauxjug.tdd.wombat.model.CardinalPoint;)}"/>
-      <children xsi:type="editmodel:MethodEditModel" name="setMoveBehaviour" size="130,16" id="{UMLID=_-j6scNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMovable#setMoveBehaviour(Lorg.bordeauxjug.tdd.wombat.model.IMoveBehaviour;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMoveBehaviour" size="130,16" id="{UMLID=_-j6scNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMovable#setMoveBehaviour()}"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" name="use" size="2,1" autoLocated="true" id="{UMLID=_0rVoUNI0Ed6XQtR1w4tG6A}" source="//@children.6" target="//@children.7" targetEnd="//@children.6/@sourceConnections.0/@children.1" label="//@children.6/@sourceConnections.0/@children.2" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-      <children xsi:type="editmodel:AssociationEndEditModel" location="351,69" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="0,27"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="367,77" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,35"/>
       <children xsi:type="editmodel:WireLabelEditModel" name="use" size="18,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.8/@sourceConnections.0 //@children.6/@sourceConnections.0" name="IMoveBehaviour" location="1424,448" size="396,79" timstampe="2" id="{UMLID=_-j8hoNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMoveBehaviour}" runTimeClassModel="move(Lorg.bordeauxjug.tdd.wombat.model.Move;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.8/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.20/@sourceConnections.0" name="IMoveBehaviour" location="1424,448" size="396,79" timstampe="2" id="{UMLID=_-j8hoNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMoveBehaviour}" runTimeClassModel="move(Lorg.bordeauxjug.tdd.wombat.model.Move;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="66,18">
       <children xsi:type="editmodel:MethodEditModel" name="move" size="66,16" id="{UMLID=_-kabsNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMoveBehaviour#move(Lorg.bordeauxjug.tdd.wombat.model.Move;)}"/>
@@ -101,7 +101,7 @@
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" name="IMoveBehaviourWithSensor" location="1237,676" size="469,61" timstampe="18" id="{UMLID=_-kqTUNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMoveBehaviourWithSensor}" runTimeClassModel="">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.21/@sourceConnections.0" name="IMoveBehaviourWithSensor" location="1237,676" size="469,61" timstampe="18" id="{UMLID=_-kqTUNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IMoveBehaviourWithSensor}" runTimeClassModel="">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel"/>
@@ -111,11 +111,11 @@
     </sourceConnections>
     <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" description="Generalization" autoLocated="true" id="{UMLID=_-ky2MNIzEd6XQtR1w4tG6A}" source="//@children.8" target="//@children.11" targetEnd="//@children.8/@sourceConnections.1/@children.1" sourceEnd="//@children.8/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
       <children xsi:type="editmodel:AssociationEndEditModel" location="413,0" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="54,79"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="54,95"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" name="IPrey" location="308,378" size="326,133" timstampe="6" id="{UMLID=_7OIcYNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IPrey}" runTimeClassModel="gotEaten(),isAlive(),getEnergyValue(),getKingdom()">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.15/@sourceConnections.0" name="IPrey" location="308,378" size="326,133" timstampe="6" id="{UMLID=_7OIcYNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IPrey}" runTimeClassModel="gotEaten(),isAlive(),getEnergyValue(),getKingdom()">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="116,72">
       <children xsi:type="editmodel:MethodEditModel" name="getEnergyValue" size="116,16" id="{UMLID=_-lO7ENIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/IPrey#getEnergyValue()}"/>
@@ -130,7 +130,7 @@
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.0" name="ISensor" location="2086,546" size="341,79" timstampe="6" id="{UMLID=_-ltcMNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensor}" runTimeClassModel="getPreysInTheVicinityOf(Lorg.bordeauxjug.tdd.wombat.model.Coordinates;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.11/@sourceConnections.0 //@children.23/@sourceConnections.0" name="ISensor" location="2086,546" size="341,79" timstampe="8" id="{UMLID=_-ltcMNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensor}" runTimeClassModel="getPreysInTheVicinityOf(Lorg.bordeauxjug.tdd.wombat.model.Coordinates;)">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="156,18">
       <children xsi:type="editmodel:MethodEditModel" name="getPreysInTheVicinityOf" size="156,16" id="{UMLID=_-ly7wNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensor#getPreysInTheVicinityOf(Lorg.bordeauxjug.tdd.wombat.model.Coordinates;)}"/>
@@ -138,21 +138,93 @@
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
-  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.8/@sourceConnections.1" name="ISensorable" location="1596,546" size="369,79" timstampe="2" id="{UMLID=_-kyPINIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensorable}" runTimeClassModel="setSensor(Lorg.bordeauxjug.tdd.wombat.model.ISensor;)">
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.8/@sourceConnections.1 //@children.22/@sourceConnections.0" name="ISensorable" location="1596,546" size="385,95" timstampe="23" id="{UMLID=_-kyPINIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensorable}" runTimeClassModel="setSensor()">
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
-      <children xsi:type="editmodel:MethodEditModel" name="setSensor" size="90,16" id="{UMLID=_-mPAoNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensorable#setSensor(Lorg.bordeauxjug.tdd.wombat.model.ISensor;)}"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSensor" size="90,16" id="{UMLID=_-mPAoNIzEd6XQtR1w4tG6A,JavaID=org.bordeauxjug.tdd.wombat.model/ISensorable#setSensor()}"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" name="use" size="2,1" autoLocated="true" id="{UMLID=_QJrMwNI1Ed6XQtR1w4tG6A}" source="//@children.11" target="//@children.10" targetEnd="//@children.11/@sourceConnections.0/@children.1" label="//@children.11/@sourceConnections.0/@children.2" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
-      <children xsi:type="editmodel:AssociationEndEditModel" location="369,39" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="385,39" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,39"/>
       <children xsi:type="editmodel:WireLabelEditModel" name="use" size="18,14" fontInfo="Arial-8-0" anchorKind="MiddlePart"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" attributeSorter="Naturel" methodSorter="Naturel" innerClassSorter="Naturel" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
   </children>
+  <children xsi:type="editmodel:NotepadEditModel" backgroundRGB="255,128,0" foregroundRGB="91,91,0" location="364,15" size="92,24" fontInfo="Arial-8-0" note="Greenfoot API">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.12" target="//@children.1" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,12" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="235,13"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="207,70" size="367,68" fontInfo="Arial-8-0" note="Delegate in order to allow us to deport implementation &#xD;&#xA;of act() method in a specific interface, in order to mock it &#xD;&#xA;(and not to mock Greenfoot's Actor class)">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.13" target="//@children.0" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="119,68" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="284,0"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="742,92" size="159,24" fontInfo="Arial-8-0" note="JUG's Actor super interface">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.14" target="//@children.2" targetEnd="//@children.14/@sourceConnections.0/@children.1" sourceEnd="//@children.14/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="79,24" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="248,0"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="28,526" size="275,24" fontInfo="Arial-8-0" note="IPreys are Actors which can be eaten by IPredators">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.15" target="//@children.9" targetEnd="//@children.15/@sourceConnections.0/@children.1" sourceEnd="//@children.15/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="176,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,116"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="364,600" size="212,24" fontInfo="Arial-8-0" note="IPredators are Actors which eat IPreys">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.16" target="//@children.3" targetEnd="//@children.16/@sourceConnections.0/@children.1" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="212,11" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="998,248" size="203,24" fontInfo="Arial-8-0" note="Interface allowing to use FoodModes">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.17" target="//@children.4" targetEnd="//@children.17/@sourceConnections.0/@children.1" sourceEnd="//@children.17/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="101,24" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="245,0"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="1358,237" size="369,24" fontInfo="Arial-8-0" note="Interface allowing to specify if IPredator can (or cannot) eat given IPrey">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.18" target="//@children.5" targetEnd="//@children.18/@sourceConnections.0/@children.1" sourceEnd="//@children.18/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="205,24" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="163,0"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="1043,534" size="224,24" fontInfo="Arial-8-0" note="Interface allowing to use IMoveBehaviour">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.19" target="//@children.6" targetEnd="//@children.19/@sourceConnections.0/@children.1" sourceEnd="//@children.19/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="111,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="174,113"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="1777,369" size="233,38" fontInfo="Arial-8-0" note="Interface allowing specify specific &#xD;&#xA;implementations for movements behaviours">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.20" target="//@children.7" targetEnd="//@children.20/@sourceConnections.0/@children.1" sourceEnd="//@children.20/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="21,38" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="374,0"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="1175,602" size="208,52" fontInfo="Arial-8-0" note="This types of IMoveBehaviour can&#xD;&#xA;use ISensor in order to retrieve IPreys&#xD;&#xA;around current IPredator">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.21" target="//@children.8" targetEnd="//@children.21/@sourceConnections.0/@children.1" sourceEnd="//@children.21/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="134,52" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,0"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="1764,656" size="184,24" fontInfo="Arial-8-0" note="Interface allowing to use ISensor">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.22" target="//@children.11" targetEnd="//@children.22/@sourceConnections.0/@children.1" sourceEnd="//@children.22/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="91,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="259,95"/>
+    </sourceConnections>
+  </children>
+  <children xsi:type="editmodel:NotepadEditModel" foregroundRGB="91,91,0" location="2048,646" size="187,52" fontInfo="Arial-8-0" note="Sensor will help to retrieve IPreys&#xD;&#xA;around IPredator depending on&#xD;&#xA;its current position">
+    <sourceConnections xsi:type="editmodel:IndicationEditModel" autoLocated="true" source="//@children.23" target="//@children.10" targetEnd="//@children.23/@sourceConnections.0/@children.1" sourceEnd="//@children.23/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="112,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="74,79"/>
+    </sourceConnections>
+  </children>
   <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=7" autoName="false"/>
-  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="0,0" rulerUnit="cm" gridShow="true">
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="14,14" gridOrigin="2198,504" rulerUnit="cm" gridShow="true">
     <leftRuler/>
     <topRuler/>
   </boardSetting>
