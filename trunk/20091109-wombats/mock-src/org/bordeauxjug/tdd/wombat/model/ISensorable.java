@@ -1,6 +1,6 @@
 package org.bordeauxjug.tdd.wombat.model;
 
-public interface ISensorable {
+public interface ISensorable<T extends ISensor> {
 
-	void setSensor(ISensor sensor);
+	void setSensor(T sensor);
 }
