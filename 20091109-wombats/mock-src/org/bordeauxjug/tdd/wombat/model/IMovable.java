@@ -1,7 +1,7 @@
 package org.bordeauxjug.tdd.wombat.model;
 
-public interface IMovable {
+public interface IMovable<T extends IMoveBehaviour> {
 
 	void setDirection(CardinalPoint cp);
-	void setMoveBehaviour(IMoveBehaviour moveBehaviour);
+	void setMoveBehaviour(T moveBehaviour);
 }
