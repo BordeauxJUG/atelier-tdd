@@ -1,11 +1,11 @@
 package org.bordeauxjug.tdd.wombat.model;
 
-public class Move {
+public class MoveStatus {
 
 	private CardinalPoint cp;
 	private Coordinates coord;
 	
-	public Move(CardinalPoint _cp, Coordinates _coord){
+	public MoveStatus(CardinalPoint _cp, Coordinates _coord){
 		this.cp = _cp;
 		this.coord = _coord;
 	}
@@ -35,7 +35,7 @@ public class Move {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Move other = (Move) obj;
+		MoveStatus other = (MoveStatus) obj;
 		if (coord == null) {
 			if (other.coord != null)
 				return false;

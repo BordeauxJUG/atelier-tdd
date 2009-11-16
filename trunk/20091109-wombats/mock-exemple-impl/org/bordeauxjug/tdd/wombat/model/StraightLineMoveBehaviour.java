@@ -6,8 +6,8 @@ import greenfoot.core.WorldHandler;
 public class StraightLineMoveBehaviour implements IMoveBehaviour {
 
 	@Override
-	public Move move(Move currentMove) {
-		Move newMove = new Move(currentMove.getCp(), new Coordinates(currentMove.getCoord().x, currentMove.getCoord().y));
+	public MoveStatus move(MoveStatus currentMove) {
+		MoveStatus newMove = new MoveStatus(currentMove.getCp(), new Coordinates(currentMove.getCoord().x, currentMove.getCoord().y));
 		if (canMove(currentMove)) {
 			switch (currentMove.getCp())
 			{
@@ -33,7 +33,7 @@ public class StraightLineMoveBehaviour implements IMoveBehaviour {
 	/**
 	 * Test if we can move forward. Return true if we can, false otherwise.
 	 */
-	public boolean canMove(Move currentMove)
+	public boolean canMove(MoveStatus currentMove)
 	{
 		World myWorld = WorldHandler.getInstance().getWorld();
 		int x = currentMove.getCoord().x;
@@ -57,7 +57,7 @@ public class StraightLineMoveBehaviour implements IMoveBehaviour {
 	/**
 	 * Turns towards the left.
 	 */
-	public void turnLeft(Move currentMove, Move newMove) {
+	public void turnLeft(MoveStatus currentMove, MoveStatus newMove) {
 		switch (currentMove.getCp()) {
 			case SOUTH : newMove.setCp(CardinalPoint.EAST); break;
 			case EAST : newMove.setCp(CardinalPoint.NORTH); break;
