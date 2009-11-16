@@ -1,0 +1,8 @@
+#Build Dojo Howto
+
+= Build Dojo Howto =
+
+Pour construire le projet wombat_dojo, il faut :
+  * récupérer via svn le projet, tout est expliqué [http://code.google.com/p/jugbordeaux/source/checkout ici]
+  * utiliser [http://maven.apache.org maven] pour lancer le build :
+{{{ mvn clean install }}}
