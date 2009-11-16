@@ -40,7 +40,7 @@ public class FoodModeTest {
 		
 		IFoodMode vegetarianFoodMode = new UniqueFoodMode(Kingdom.VEGETAL);
 		Wombat2 w = new Wombat2("wombat1", 
-				new Move(CardinalPoint.SOUTH, new Coordinates(0, 0)),
+				new MoveStatus(CardinalPoint.SOUTH, new Coordinates(0, 0)),
 				mockMoveBehaviour, vegetarianFoodMode);
 		
 		// Adding 2 leaves and 1 rabbit on the way : the 2 leaves should be eaten
@@ -118,38 +118,38 @@ public class FoodModeTest {
 	private void expectMoveAroundTheWorld(int worldWidth, int worldHeight, IMoveBehaviour mockMoveBehaviour){
 		// move south
 		for(int y=1; y < worldHeight; y++){
-			expect(mockMoveBehaviour.move((Move)anyObject()))
-				.andReturn(new Move(CardinalPoint.SOUTH, new Coordinates(0, y)));
+			expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+				.andReturn(new MoveStatus(CardinalPoint.SOUTH, new Coordinates(0, y)));
 		}
 		// rotate east
-		expect(mockMoveBehaviour.move((Move)anyObject()))
-			.andReturn(new Move(CardinalPoint.EAST, new Coordinates(0, worldHeight-1)));
+		expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+			.andReturn(new MoveStatus(CardinalPoint.EAST, new Coordinates(0, worldHeight-1)));
 
 		// move east
 		for(int x=1; x < worldWidth; x++){
-			expect(mockMoveBehaviour.move((Move)anyObject()))
-				.andReturn(new Move(CardinalPoint.EAST, new Coordinates(x, worldHeight-1)));
+			expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+				.andReturn(new MoveStatus(CardinalPoint.EAST, new Coordinates(x, worldHeight-1)));
 		}
 		// rotate north
-		expect(mockMoveBehaviour.move((Move)anyObject()))
-			.andReturn(new Move(CardinalPoint.NORTH, new Coordinates(worldWidth-1, worldHeight-1)));
+		expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+			.andReturn(new MoveStatus(CardinalPoint.NORTH, new Coordinates(worldWidth-1, worldHeight-1)));
 
 		// move north
 		for(int y=worldHeight-2; y >= 0; y--){
-			expect(mockMoveBehaviour.move((Move)anyObject()))
-				.andReturn(new Move(CardinalPoint.NORTH, new Coordinates(worldWidth-1, y)));
+			expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+				.andReturn(new MoveStatus(CardinalPoint.NORTH, new Coordinates(worldWidth-1, y)));
 		}
 		// rotate west
-		expect(mockMoveBehaviour.move((Move)anyObject()))
-			.andReturn(new Move(CardinalPoint.WEST, new Coordinates(worldWidth-1, 0)));
+		expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+			.andReturn(new MoveStatus(CardinalPoint.WEST, new Coordinates(worldWidth-1, 0)));
 
 		// move west
 		for(int x=worldWidth-2; x >= 0; x--){
-			expect(mockMoveBehaviour.move((Move)anyObject()))
-				.andReturn(new Move(CardinalPoint.WEST, new Coordinates(x, 0)));
+			expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+				.andReturn(new MoveStatus(CardinalPoint.WEST, new Coordinates(x, 0)));
 		}
 		// rotate east
-		expect(mockMoveBehaviour.move((Move)anyObject()))
-			.andReturn(new Move(CardinalPoint.WEST, new Coordinates(0, 0)));
+		expect(mockMoveBehaviour.move((MoveStatus)anyObject()))
+			.andReturn(new MoveStatus(CardinalPoint.WEST, new Coordinates(0, 0)));
 	}
 }
