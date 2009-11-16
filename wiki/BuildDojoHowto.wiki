@@ -5,4 +5,4 @@ Pour construire le projet dojo-wombat, il faut :
   * utiliser [http://maven.apache.org maven] pour lancer le build :
 {{{ mvn clean install }}}
 
-Il est prévu de le rendre eclipse compatible gràce au plugin maven eclipse.
+Il est prévu de le rendre "eclipse compatible" grâce au plugin maven eclipse.
