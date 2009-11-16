@@ -12,10 +12,10 @@ public class Wombat2 implements IPredator {
 	private String name;
 	private IMoveBehaviour moveBehaviour;
 	private IFoodMode foodMode;
-	private Move currentMove;
+	private MoveStatus currentMove;
 	private ActorDelegator greenfootActor;
 	
-	public Wombat2(String _name, Move _currentMove, IMoveBehaviour _moveBehaviour, IFoodMode _foodMode){
+	public Wombat2(String _name, MoveStatus _currentMove, IMoveBehaviour _moveBehaviour, IFoodMode _foodMode){
 		super();
 		this.name = _name;
 		this.moveBehaviour = _moveBehaviour;
@@ -46,7 +46,7 @@ public class Wombat2 implements IPredator {
 		
 		if(!somethingEaten){
 			// Nothing to eat ... let's move !
-			Move newMove = moveBehaviour.move(currentMove);
+			MoveStatus newMove = moveBehaviour.move(currentMove);
 			
 			// If something changed (heading or coord) after the move : update it !
 			if(!currentMove.equals(newMove)){
