@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bordeauxjug.tdd.wombat.model.WombatWorld;
+import org.bordeauxjug.tdd.wombat.persistence.IWorldDAO;
 
 /**
  * Classe qui devrait venir remplacer la classe WorldCreator
@@ -18,9 +19,9 @@ import org.bordeauxjug.tdd.wombat.model.WombatWorld;
  */
 public class WorldHelper {
 
-	public static void initializeWorld(int worldWidth, int worldHeight){
+	public static void initializeWorld(int worldWidth, int worldHeight, IWorldDAO worldDAO){
 		GreenfootUtil.initialise(new TestUtilDelegate());
-		World world = new WombatWorld(worldWidth, worldHeight, false);
+		World world = new WombatWorld(worldWidth, worldHeight, false, worldDAO);
 		WorldHandler.initialise();
 		WorldHandler.getInstance().setWorld(world);
 	}

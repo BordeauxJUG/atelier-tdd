@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bordeauxjug.tdd.wombat.greenfoot.WorldHelper;
+import org.bordeauxjug.tdd.wombat.persistence.WorldDAO;
 import org.easymock.classextension.EasyMock;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -23,7 +24,7 @@ public class FoodModeTest {
 	
 	@BeforeClass
 	public static void setUp() throws Exception {
-		WorldHelper.initializeWorld(WORLD_WIDTH, WORLD_HEIGHT);
+		WorldHelper.initializeWorld(WORLD_WIDTH, WORLD_HEIGHT, new WorldDAO());
 	}
 
 	@Test
