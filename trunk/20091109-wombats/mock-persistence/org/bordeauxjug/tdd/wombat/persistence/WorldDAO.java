@@ -4,12 +4,14 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import org.bordeauxjug.tdd.wombat.model.Cell;
+import org.bordeauxjug.tdd.wombat.model.Coordinates;
+import org.bordeauxjug.tdd.wombat.model.IActorDelegate;
 
 /**
  *
  * @author laurent.foret
  */
-public class WorldDAO {
+public class WorldDAO implements IWorldDAO {
 
     public static String CREATE_CELL_TABLE =
             "create table \"PUBLIC\".CELL ("
@@ -49,4 +51,28 @@ public class WorldDAO {
             }
         }
     }
+
+	@Override
+	public void createWorld() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Cell getCell(Coordinates coord) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void registerMoveOn(Cell c, IActorDelegate actor) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Cell createOrUpdateCell(Coordinates coord, IActorDelegate actor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
