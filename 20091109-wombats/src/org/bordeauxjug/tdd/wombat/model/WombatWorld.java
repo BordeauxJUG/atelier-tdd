@@ -1,7 +1,12 @@
 package org.bordeauxjug.tdd.wombat.model;
 
+import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.World;
+
+import org.bordeauxjug.tdd.wombat.persistence.IWorldDAO;
+import org.bordeauxjug.tdd.wombat.persistence.Obstacle;
+import org.bordeauxjug.tdd.wombat.persistence.WorldDAO;
 
 /**
  * A world where wombats live.
@@ -11,12 +16,15 @@ import greenfoot.World;
  */
 public class WombatWorld extends World
 {
+	
+	private IWorldDAO worldDAO;
+	
 	/**
 	 * Create a new world with 8x8 cells and with a cell size of 60x60 pixels
 	 * and with populated objects
 	 */
 	public WombatWorld(){
-		this(8,8,true);
+		this(8,8,true, new WorldDAO());
 	}
 	
 	/**
@@ -27,12 +35,13 @@ public class WombatWorld extends World
 	 * @param populate If true, will populate world with wombats and leaves, otherwise, world will be
 	 * freed
 	 */
-	public WombatWorld(int worldWidth, int worldHeight, boolean populate){
+	public WombatWorld(int worldWidth, int worldHeight, boolean populate, IWorldDAO dao){
 		super(worldWidth, worldHeight, 60);
 		setBackground("images/cell.jpg");
 		if(populate){
 			populate();
 		}
+		this.worldDAO = dao;
 	}
 
 	// @Test
@@ -70,6 +79,17 @@ public class WombatWorld extends World
 
 		Leaf l6 = new Leaf();
 		addObject(l6, 4, 7);
+		
+		Obstacle o1 = new Obstacle();
+		addObject(new ActorDelegator<IActorDelegate>(o1), 4, 8);
+	}
+
+	@Override
+	public synchronized void addObject(Actor actor, int x, int y) {
+		super.addObject(actor, x, y);
+		worldDAO.createOrUpdateCell(
+				new Coordinates(x, y),
+				((ActorDelegator<IActorDelegate>) actor).getActorDelegate());
 	}
 
 	/**
