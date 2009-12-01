@@ -5,7 +5,8 @@ public class Cell {
     private Coordinates coordinates;
     private IPrey prey;
     private int quantity;
-    private boolean wombatHasBeenHere;
+    private int timesWombatHasBeenHere;
+    private boolean isObstacle;
 
     public Coordinates getCoordinates() {
         return coordinates;
@@ -31,12 +32,20 @@ public class Cell {
         this.quantity = quantity;
     }
 
-    public boolean isWombatHasBeenHere() {
-        return wombatHasBeenHere;
-    }
+	public boolean isObstacle() {
+		return isObstacle;
+	}
 
-    public void setWombatHasBeenHere(boolean wombatHasBeenHere) {
-        this.wombatHasBeenHere = wombatHasBeenHere;
-    }
-    
+	public void setObstacle(boolean isObstacle) {
+		this.isObstacle = isObstacle;
+	}
+
+	public int getTimesWombatHasBeenHere() {
+		return timesWombatHasBeenHere;
+	}
+
+	public void setTimesWombatHasBeenHere(int timesWombatHasBeenHere) {
+		this.timesWombatHasBeenHere = timesWombatHasBeenHere;
+	}
+
 }
