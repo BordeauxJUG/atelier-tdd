@@ -1,6 +1,7 @@
 package org.bordeauxjug.tdd.wombat.model;
 
 import greenfoot.Actor;
+import greenfoot.GreenfootImage;
 
 public class ActorDelegator<T extends IActorDelegate> extends Actor {
 
@@ -22,5 +23,10 @@ public class ActorDelegator<T extends IActorDelegate> extends Actor {
 	
 	public T getActorDelegate(){
 		return this.actorDelegate;
+	}
+	
+	@Override
+	public GreenfootImage getImage() {
+		return this.actorDelegate.getImage();
 	}
 }

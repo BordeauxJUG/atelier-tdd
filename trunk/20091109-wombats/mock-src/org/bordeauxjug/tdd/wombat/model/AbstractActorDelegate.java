@@ -1,7 +1,13 @@
 package org.bordeauxjug.tdd.wombat.model;
 
+import greenfoot.GreenfootImage;
+
 public abstract class AbstractActorDelegate implements IActorDelegate{
 
+	protected static final String IMAGES_ROOT_PATH = "C:/Users/Fred/workspaces/JUG/20091109-wombats/images/";
+	
+	protected static final GreenfootImage GREENFOOT_DEFAULT_IMAGE = new GreenfootImage(IMAGES_ROOT_PATH+"greenfoot.png");
+	
 	private String name;
 	private Coordinates coords;
 	private ActorDelegator<? extends IActorDelegate> greenfootActor;
@@ -30,5 +36,10 @@ public abstract class AbstractActorDelegate implements IActorDelegate{
 
 	public ActorDelegator<? extends IActorDelegate> getGreenfootActor() {
 		return greenfootActor;
+	}
+	
+	@Override
+	public GreenfootImage getImage() {
+		return GREENFOOT_DEFAULT_IMAGE;
 	}
 }
