@@ -8,5 +8,5 @@ public interface IActorDelegate {
 
 	void act();
 	
-	void setGreenfootActor(ActorDelegator greenfootActor);
+	void setGreenfootActor(ActorDelegator<? extends IActorDelegate> greenfootActor);
 }
