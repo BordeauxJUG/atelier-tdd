@@ -1,27 +1,30 @@
 package org.bordeauxjug.tdd.wombat.model;
 
-import java.util.Iterator;
-import java.util.List;
-
 import greenfoot.World;
 import greenfoot.core.WorldHandler;
 
+import java.util.Iterator;
+import java.util.List;
 
-public class Wombat2 implements IPredator {
 
-	private String name;
+public class Wombat2 extends AbstractActorDelegate implements IPredator {
+
 	private IMoveBehaviour moveBehaviour;
 	private IFoodMode foodMode;
 	private MoveStatus currentMove;
-	private ActorDelegator greenfootActor;
 	
-	public Wombat2(String _name, MoveStatus _currentMove, IMoveBehaviour _moveBehaviour, IFoodMode _foodMode){
-		super();
-		this.name = _name;
+	public Wombat2(String _name){
+		this(_name, new MoveStatus(CardinalPoint.SOUTH, new Coordinates(0,0)),
+				new StraightLineMoveBehaviour(), 
+				new UniqueFoodMode(Kingdom.VEGETAL));
+	}
+	
+	public Wombat2(String _name, MoveStatus _currentMove, 
+			IMoveBehaviour _moveBehaviour, IFoodMode _foodMode){
+		super(_name, _currentMove.getCoord());
 		this.moveBehaviour = _moveBehaviour;
 		this.foodMode = _foodMode;
 		this.currentMove = _currentMove;
-		this.greenfootActor = null;
 		//currentMoveUpdated();
 	}
 	
@@ -63,11 +66,6 @@ public class Wombat2 implements IPredator {
 	}
 
 	@Override
-	public Coordinates getCoordinates() {
-		return this.currentMove.getCoord();
-	}
-
-	@Override
 	public void setFoodMode(IFoodMode _foodMode) {
 		this.foodMode = _foodMode;
 	}
@@ -82,16 +80,16 @@ public class Wombat2 implements IPredator {
 		this.currentMove.setCp(_cp);
 		switch (_cp) {
 			case SOUTH :
-				this.greenfootActor.setRotation(90);
+				this.getGreenfootActor().setRotation(90);
 				break;
 			case EAST :
-				this.greenfootActor.setRotation(0);
+				this.getGreenfootActor().setRotation(0);
 				break;
 			case NORTH :
-				this.greenfootActor.setRotation(270);
+				this.getGreenfootActor().setRotation(270);
 				break;
 			case WEST :
-				this.greenfootActor.setRotation(180);
+				this.getGreenfootActor().setRotation(180);
 				break;
 			default :
 				break;
@@ -100,17 +98,7 @@ public class Wombat2 implements IPredator {
 
 	public void setCoordinates(Coordinates _coord){
 		this.currentMove.setCoord(_coord);
-		this.greenfootActor.setLocation(_coord.getX(), _coord.getY());
-	}
-
-	@Override
-	public String getName() {
-		return this.name;
-	}
-
-	@Override
-	public void setGreenfootActor(ActorDelegator _greenfootActor) {
-		this.greenfootActor = _greenfootActor;
+		this.getGreenfootActor().setLocation(_coord.getX(), _coord.getY());
 	}
 
 	private void currentMoveUpdated(){
