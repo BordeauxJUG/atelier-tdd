@@ -1,20 +1,21 @@
 package org.bordeauxjug.tdd.wombat.persistence;
 
+import java.sql.SQLException;
 import org.bordeauxjug.tdd.wombat.model.Cell;
 import org.bordeauxjug.tdd.wombat.model.Coordinates;
 import org.bordeauxjug.tdd.wombat.model.IActorDelegate;
 
 public interface IWorldDAO {
 
-	void createWorld();
-	void registerMoveOn(Cell c, IActorDelegate actor);
+	void createWorld() throws SQLException;
+	void registerMoveOn(Cell c, IActorDelegate actor) throws SQLException;
 	
 	/**
 	 * @param coord
 	 * @param actor May be null
-	 * @return La cellule crée
+	 * @return La cellule crï¿½e
 	 */
-	Cell createOrUpdateCell(Coordinates coord, IActorDelegate actor);
+	Cell createOrUpdateCell(Coordinates coord, IActorDelegate actor) throws SQLException;
 	
 	/**
 	 * Will return a cell depending on the actor type : 
@@ -26,5 +27,5 @@ public interface IWorldDAO {
 	 * @param coord
 	 * @return
 	 */
-	Cell getCell(Coordinates coord);
+	Cell getCell(Coordinates coord) throws SQLException;
 }

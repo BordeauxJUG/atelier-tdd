@@ -8,6 +8,12 @@ public class Cell {
     private int timesWombatHasBeenHere;
     private boolean isObstacle;
 
+    public Cell(Coordinates coordinates, boolean isObstacle, int timesWombatHasBeenHere) {
+        this.coordinates = coordinates;
+        this.timesWombatHasBeenHere = timesWombatHasBeenHere;
+        this.isObstacle = isObstacle;
+    }
+
     public Coordinates getCoordinates() {
         return coordinates;
     }
@@ -47,5 +53,4 @@ public class Cell {
 	public void setTimesWombatHasBeenHere(int timesWombatHasBeenHere) {
 		this.timesWombatHasBeenHere = timesWombatHasBeenHere;
 	}
-
 }

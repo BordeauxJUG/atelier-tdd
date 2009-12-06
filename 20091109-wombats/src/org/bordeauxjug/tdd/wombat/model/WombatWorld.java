@@ -4,6 +4,9 @@ import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.World;
 
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.bordeauxjug.tdd.wombat.persistence.IWorldDAO;
 import org.bordeauxjug.tdd.wombat.persistence.Obstacle;
 import org.bordeauxjug.tdd.wombat.persistence.WorldDAO;
@@ -14,8 +17,7 @@ import org.bordeauxjug.tdd.wombat.persistence.WorldDAO;
  * @author Michael Kolling
  * @version 1.0.1
  */
-public class WombatWorld extends World
-{
+public class WombatWorld extends World {
 	
 	private IWorldDAO worldDAO;
 	
@@ -23,8 +25,8 @@ public class WombatWorld extends World
 	 * Create a new world with 8x8 cells and with a cell size of 60x60 pixels
 	 * and with populated objects
 	 */
-	public WombatWorld(){
-		this(8,8,true, new WorldDAO());
+    public WombatWorld() {
+        this(8, 8, true, new WorldDAO());
 	}
 	
 	/**
@@ -35,18 +37,17 @@ public class WombatWorld extends World
 	 * @param populate If true, will populate world with wombats and leaves, otherwise, world will be
 	 * freed
 	 */
-	public WombatWorld(int worldWidth, int worldHeight, boolean populate, IWorldDAO dao){
+    public WombatWorld(int worldWidth, int worldHeight, boolean populate, IWorldDAO dao) {
 		super(worldWidth, worldHeight, 60);
 		setBackground("images/cell.jpg");
-		if(populate){
+        if (populate) {
 			populate();
 		}
 		this.worldDAO = dao;
 	}
 
 	// @Test
-	public void test()
-	{
+    public void test() {
 		System.out.println("Hello");
 	}
 
@@ -54,8 +55,7 @@ public class WombatWorld extends World
 	 * 
 	 * Populate the world with a fixed scenario of wombats and leaves.
 	 */
-	public void populate()
-	{
+    public void populate() {
 		Wombat w1 = new Wombat();
 		addObject(w1, 0, 0);
 
@@ -86,20 +86,20 @@ public class WombatWorld extends World
 
 	@Override
 	public synchronized void addObject(Actor actor, int x, int y) {
+        try {
 		super.addObject(actor, x, y);
-		worldDAO.createOrUpdateCell(
-				new Coordinates(x, y),
-				((ActorDelegator<IActorDelegate>) actor).getActorDelegate());
+            worldDAO.createOrUpdateCell(new Coordinates(x, y), ((ActorDelegator<IActorDelegate>) actor).getActorDelegate());
+        } catch (SQLException ex) {
+            new RuntimeException(ex);
 	}
+    }
 
 	/**
 	 * Place a number of leaves into the world at random places. The number of
 	 * leaves can be specified.
 	 */
-	public void randomLeaves(int howMany)
-	{
-		for (int i = 0; i < howMany; i++)
-		{
+    public void randomLeaves(int howMany) {
+        for (int i = 0; i < howMany; i++) {
 			Leaf leaf = new Leaf();
 			int x = Greenfoot.getRandomNumber(getWidth());
 			int y = Greenfoot.getRandomNumber(getHeight());
