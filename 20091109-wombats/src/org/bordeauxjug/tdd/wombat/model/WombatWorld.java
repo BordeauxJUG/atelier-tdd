@@ -66,7 +66,7 @@ public class WombatWorld extends World
 		addObject(new Leaf2("l4"), 2, 6);
 		addObject(new Leaf2("l5"), 5, 0);
 		addObject(new Leaf2("l6"), 4, 7);
-		addObject(new Obstacle("o1"), 4, 8);
+		addObject(new Obstacle("o1"), 4, 6);
 	}
 
 	/**
