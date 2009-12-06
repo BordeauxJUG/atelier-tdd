@@ -16,6 +16,7 @@ public class DBPool {
 
     static JdbcConnectionPool POOL = JdbcConnectionPool.create(JDBC_H2_URL, JDBC_H2_USER, JDBC_H2_PASSWORD);
 
+   
     public static Connection getConnection() throws SQLException {
         return POOL.getConnection();
     }
