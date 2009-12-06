@@ -16,7 +16,7 @@ public class Main {
             Coordinates coord21 = new Coordinates(2, 1);
             Coordinates coord22 = new Coordinates(2, 2);
 
-            dao.createOrUpdateCell(coord11, new Obstacle());
+            dao.createOrUpdateCell(coord11, new Obstacle("o1"));
             dao.createOrUpdateCell(coord22, null);
 
             Cell cell12 = dao.getCell(coord12);
