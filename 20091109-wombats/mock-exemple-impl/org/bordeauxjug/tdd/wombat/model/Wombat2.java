@@ -1,5 +1,6 @@
 package org.bordeauxjug.tdd.wombat.model;
 
+import greenfoot.GreenfootImage;
 import greenfoot.World;
 import greenfoot.core.WorldHandler;
 
@@ -9,6 +10,8 @@ import java.util.List;
 
 public class Wombat2 extends AbstractActorDelegate implements IPredator {
 
+	protected static final GreenfootImage WOMBAT_IMAGE = new GreenfootImage(IMAGES_ROOT_PATH+"wombat.gif");
+	
 	private IMoveBehaviour moveBehaviour;
 	private IFoodMode foodMode;
 	private MoveStatus currentMove;
@@ -104,5 +107,10 @@ public class Wombat2 extends AbstractActorDelegate implements IPredator {
 	private void currentMoveUpdated(){
 		setDirection(this.currentMove.getCp());
 		setCoordinates(this.currentMove.getCoord());
+	}
+	
+	@Override
+	public GreenfootImage getImage() {
+		return WOMBAT_IMAGE;
 	}
 }
