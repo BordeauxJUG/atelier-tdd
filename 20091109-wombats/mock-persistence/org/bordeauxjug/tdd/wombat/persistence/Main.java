@@ -22,7 +22,7 @@ public class Main {
             Cell cell12 = dao.getCell(coord12);
             Cell cell21 = dao.getCell(coord21);
             
-            IActorDelegate albert = new Wombat2("Albert", null, null, null);
+            IActorDelegate albert = new Wombat2("Albert");
             dao.registerMoveOn(cell21, albert);
             dao.registerMoveOn(cell12, albert);
             dao.registerMoveOn(cell21, albert);
