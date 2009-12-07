@@ -1,5 +1,8 @@
 package org.bordeauxjug.tdd.wombat.model;
 
+import org.bordeauxjug.tdd.wombat.greenfoot.ActorDelegator;
+import org.bordeauxjug.tdd.wombat.greenfoot.IActorDelegate;
+
 import greenfoot.Greenfoot;
 import greenfoot.World;
 
@@ -48,8 +51,8 @@ public class WombatWorld extends World
 	 */
 	public void populate()
 	{
-		addObject(new Wombat2("w1"), 0, 0);
-		addObject(new Wombat2("w2"), 1, 7);
+		addObject(new Wombat(), 0, 0);
+		addObject(new Wombat(), 1, 7);
 		randomLeaves(8);
 	}
 
@@ -75,7 +78,7 @@ public class WombatWorld extends World
 	{
 		for (int i = 0; i < howMany; i++)
 		{
-			Leaf2 leaf = new Leaf2("l"+i);
+			Leaf leaf = new Leaf();
 			int x = Greenfoot.getRandomNumber(getWidth());
 			int y = Greenfoot.getRandomNumber(getHeight());
 			addObject(leaf, x, y);
