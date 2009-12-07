@@ -27,28 +27,7 @@ public class WombatWorldTest
 	public void testMove()
 	{
 		world = WorldCreator.createWorld();
-		Wombat w = new Wombat();
-		world.addObject(w, 2, 2);
-		w.move();
-
-		assertEquals(3, w.getX());
-		assertEquals(2, w.getY());
-
-	}
-
-	@Test
-	public void testWombatEatsLeaves()
-	{
-		world = WorldCreator.createWorld();
-		Wombat w = new Wombat();
-		world.addObject(w, 2, 2);
-		Leaf l = new Leaf();
-		world.addObject(l, 3, 2);
-		w.act();
-		w.act();
-		// Remove call to populate() method in the default constructor of
-		// WombatWorld to have this test pass
-		assertTrue("Il existe encore des feuilles", world.getObjects(Leaf.class).isEmpty());
+		// TODO: add code here ...
 	}
 
 }
