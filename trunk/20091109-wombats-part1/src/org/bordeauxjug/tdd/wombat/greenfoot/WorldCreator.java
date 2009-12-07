@@ -22,16 +22,24 @@ package org.bordeauxjug.tdd.wombat.greenfoot;
  LICENSE.txt file that accompanied this code.
  */
 
-import org.bordeauxjug.tdd.wombat.model.WombatWorld;
-
 import greenfoot.World;
 import greenfoot.core.WorldHandler;
+
+import org.bordeauxjug.tdd.wombat.model.WombatWorld;
 
 public class WorldCreator
 {
 	public static World createWorld()
 	{
 		World world = new WombatWorld();
+		WorldHandler.initialise();
+		WorldHandler.getInstance().setWorld(world);
+		return world;
+	}
+	
+	public static World createWorld(int worldWidth, int worldHeight, boolean populate)
+	{
+		World world = new WombatWorld(worldWidth, worldHeight, populate);
 		WorldHandler.initialise();
 		WorldHandler.getInstance().setWorld(world);
 		return world;

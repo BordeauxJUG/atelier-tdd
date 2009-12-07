@@ -1,14 +1,7 @@
 package org.bordeauxjug.tdd.wombat.model;
 
-import greenfoot.Actor;
 import greenfoot.Greenfoot;
 import greenfoot.World;
-
-import java.sql.SQLException;
-
-import org.bordeauxjug.tdd.wombat.persistence.IWorldDAO;
-import org.bordeauxjug.tdd.wombat.persistence.Obstacle;
-import org.bordeauxjug.tdd.wombat.persistence.WorldDAO;
 
 /**
  * A world where wombats live.
@@ -19,14 +12,12 @@ import org.bordeauxjug.tdd.wombat.persistence.WorldDAO;
 public class WombatWorld extends World
 {
 	
-	private IWorldDAO worldDAO;
-	
 	/**
 	 * Create a new world with 8x8 cells and with a cell size of 60x60 pixels
 	 * and with populated objects
 	 */
 	public WombatWorld(){
-		this(8,8,true, new WorldDAO());
+		this(8,8,true);
 	}
 	
 	/**
@@ -37,9 +28,8 @@ public class WombatWorld extends World
 	 * @param populate If true, will populate world with wombats and leaves, otherwise, world will be
 	 * freed
 	 */
-	public WombatWorld(int worldWidth, int worldHeight, boolean populate, IWorldDAO dao){
+	public WombatWorld(int worldWidth, int worldHeight, boolean populate){
 		super(worldWidth, worldHeight, 60);
-		this.worldDAO = dao;
 		setBackground("images/cell.jpg");
 		if(populate){
 			populate();
@@ -58,41 +48,9 @@ public class WombatWorld extends World
 	 */
 	public void populate()
 	{
-		addObject(new Wombat2("w1"), 0, 0);
-		addObject(new Wombat2("w2"), 1, 7);
-		addObject(new Leaf2("l1"), 5, 3);
-		addObject(new Leaf2("l2"), 0, 2);
-		addObject(new Leaf2("l3"), 7, 5);
-		addObject(new Leaf2("l4"), 2, 6);
-		addObject(new Leaf2("l5"), 5, 0);
-		addObject(new Leaf2("l6"), 4, 7);
-		addObject(new Obstacle("o1"), 4, 6);
-	}
-
-	/**
-	 * Allows to add an ActorDelegate object to the scene
-	 */
-	public void addObject(IActorDelegate actorDelegate, int x, int y){
-		// Setting actor's coords
-		actorDelegate.getCoordinates().x = x;
-		actorDelegate.getCoordinates().y = y;
-		
-		// Creating & adding ActorDelegator on the previous ActorDelegate
-		ActorDelegator<IActorDelegate> d = new ActorDelegator<IActorDelegate>(actorDelegate);
-		actorDelegate.setGreenfootActor(d);
-		addObject(d, x, y);
-	}
-	
-	@Override
-	public synchronized void addObject(Actor actor, int x, int y) {
-        try {
-    		super.addObject(actor, x, y);
-    		worldDAO.createOrUpdateCell(
-    				new Coordinates(x, y),
-    				((ActorDelegator<IActorDelegate>) actor).getActorDelegate());
-        } catch (SQLException ex) {
-            new RuntimeException(ex);
-        }
+		addObject(new Wombat(), 0, 0);
+		addObject(new Wombat(), 1, 7);
+		randomLeaves(10);
 	}
 
 	/**
