@@ -1,10 +1,8 @@
 package org.bordeauxjug.tdd.wombat;
 
 import greenfoot.World;
-import greenfoot.util.GreenfootUtil;
 
-import org.bordeauxjug.tdd.wombat.greenfoot.TestUtilDelegate;
-import org.bordeauxjug.tdd.wombat.greenfoot.WorldCreator;
+import org.bordeauxjug.tdd.wombat.helper.WorldTestHelper;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -14,15 +12,14 @@ public class WombatWorldTest
 
 
 	@BeforeClass
-	public static void setUp() throws Exception
+	public void setUp() throws Exception
 	{
-		GreenfootUtil.initialise(new TestUtilDelegate());
+		world = WorldTestHelper.initializeWorld(8, 8, false);
 	}
 
 	@Test
 	public void testMove()
 	{
-		world = WorldCreator.createWorld();
 		// TODO: add code here ...
 	}
 
