@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/bluejcore.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="lib/easymock-2.4.jar" sourcepath="lib/easymock-2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/20091109-wombats/lib/easymock-2.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/easymockclassextension-2.4.jar" sourcepath="lib/easymockclassextension-2.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/20091109-wombats/lib/easymockclassextension-2.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/h2-1.2.123.jar"/>
+	<classpathentry kind="lib" path="lib/junit-4.5.jar" sourcepath="lib/junit-4.5-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/20091109-wombats/lib/junit-4.5-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/greenfoot.jar" sourcepath="lib/Greenfoot-source-1.5.2.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/20091109-wombats/lib/greenfoot-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
