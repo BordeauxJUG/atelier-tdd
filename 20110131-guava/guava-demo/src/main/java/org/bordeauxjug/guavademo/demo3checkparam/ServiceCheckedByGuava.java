@@ -15,6 +15,4 @@ public class ServiceCheckedByGuava implements ServiceChecked{
         Preconditions.checkArgument((times < 0), "%s times ne peut être négatif", times);
     }
 
-
-
 }
