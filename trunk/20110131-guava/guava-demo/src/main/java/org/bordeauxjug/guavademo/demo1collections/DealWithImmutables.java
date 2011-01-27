@@ -13,12 +13,11 @@ import java.util.Map;
  *
  * @author lforet
  */
-public class CollectionIssues {
+public class DealWithImmutables {
 
-//
-//    AVANT
-//
-//
+
+
+
     public static List<String> populateAListAndMakeItImmutableBefore() {
         List<String> list = new ArrayList<String>();
         list.add("a");
@@ -28,24 +27,31 @@ public class CollectionIssues {
         return Collections.unmodifiableList(list);
     }
 
-//
-//  APRES
-//
-//
+
+
+
+
+
+
+    public static List<String> populateAListAndMakeItImmutableBeforeWithoutCheat() {
+        return Collections.unmodifiableList(Arrays.asList("a", "b", "c", "d"));
+    }
+
+
+
+
+
 
     public static List<String> populateAListAndMakeItImmutableGuava() {
         return ImmutableList.of("a", "b", "c", "d");
     }
 
-//    
-//
-//
-//
-//
-//    
-//    AVANT
-//    
-//
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
 
     public static Map<Integer, String> populateAMapAndMakeItImmutableBefore() {
         Map<Integer, String> map = new HashMap<Integer, String>();
@@ -56,10 +62,12 @@ public class CollectionIssues {
         return Collections.unmodifiableMap(map);
     }
 
-//
-//    APRES
-//
-//
+
+
+
+
+
+
 
     public static Map<Integer, String> populateAMapAndMakeItImmutableGuava() {
         return ImmutableMap.of(1 ,"a", 2, "b", 3, "c", 4, "d");
@@ -67,14 +75,5 @@ public class CollectionIssues {
 
 
     
-//
-//
-//
-//
-//
-//
-// AVANT sans triche
-    public static List<String> populateAListAndMakeItImmutableBeforeWithoutCheat() {
-        return Collections.unmodifiableList(Arrays.asList("a", "b", "c", "d"));
-    }
+
 }

@@ -1,7 +1,7 @@
 package org.bordeauxjug.guavademo.demo1collections;
 
 /**
- * Recherche dans un ensemble de clé,valeur par la clé et par la valeur.
+ * Recherche dans un ensemble de clé,valeur par la clé et/ou par la valeur.
  * 
  * @since 1.0
  * @author lforet
