@@ -6,7 +6,7 @@ public class LoginCheckerGuava implements LoginChecker {
 
     @Override
     public boolean check(String login) {
-        CharMatcher noSpecialChars = CharMatcher.anyOf("!@?(,)");
-        return noSpecialChars.matchesNoneOf(login);
+        CharMatcher specialChars = CharMatcher.anyOf("!@?(,)");
+        return specialChars.matchesNoneOf(login);
     }
 }
