@@ -2,7 +2,6 @@ package org.bordeauxjug.guavademo.demo6functions;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Ordering;
 import java.util.List;
 
 /**
