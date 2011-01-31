@@ -14,17 +14,18 @@ public interface DealWithMap {
      * @return la value correspondante
      */
     String findByKey(String key);
+
     /**
      * Recherche par valeur
      * @param value
      * @return la key correspondante
      */
     String findByValue(String value);
+
     /**
-     *
+     * la value comme la key est unique
      * @param key
      * @param value unique
      */
     void put(String key, String value);
-
 }
