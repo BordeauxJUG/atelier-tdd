@@ -20,9 +20,9 @@ public class DealWithMapBefore1 implements DealWithMap {
     @Override
     public String findByValue(String value) {
         // Merde : STATIC_MAP.containsValue(value); pourrait retourner la clé quand même.
-        // Obliger de ma fader l'itération :
+        // Obliger de me taper l'itération :
         for (Entry<String, String> entry : STATIC_MAP.entrySet()) {
-            if (entry.getValue().equals(value)) {
+            if (entry.getValue().equals(value)) {  // pas très nullsafe tout ça, tant pis je fonce.
                 return entry.getKey();
             }
         }
