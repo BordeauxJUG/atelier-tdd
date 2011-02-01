@@ -10,7 +10,7 @@ public interface LoginService {
 
 
     /**
-     * un mot de passe est considéré comme faible si ca longueur est < 5.
+     * un mot de passe est considéré comme faible si sa longueur est < 5.
      * @param passwords
      * @return weakPasswords
      */
