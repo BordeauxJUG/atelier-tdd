@@ -12,7 +12,7 @@ public class ServiceCheckedBefore implements ServiceChecked {
             throw new NullPointerException("ob ne peut être null");
         }
         if (times < 0) {
-            throw new IllegalArgumentException(times + "times ne peut être négatif");
+            throw new IllegalArgumentException(times + " times ne peut être négatif");
         }
     }
 
